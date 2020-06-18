@@ -4,7 +4,8 @@
   "description": "JS: Creating a SPA with pure JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/Godoi/spa-js/issues"
   },
-  "homepage": "https://github.com/Godoi/spa-js#readme"
+  "homepage": "https://github.com/Godoi/spa-js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
 }
