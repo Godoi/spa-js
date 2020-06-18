@@ -1,0 +1,22 @@
+{
+  "name": "spa-javascript",
+  "version": "0.0.0",
+  "description": "JS: Creating a SPA with pure JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godoi/spa-js.git"
+  },
+  "keywords": [
+    "javaScript"
+  ],
+  "author": "Anderson Godoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godoi/spa-js/issues"
+  },
+  "homepage": "https://github.com/Godoi/spa-js#readme"
+}
