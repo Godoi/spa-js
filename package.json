@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "webpack-deve-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -21,9 +21,15 @@
     "url": "https://github.com/Godoi/spa-js/issues"
   },
   "homepage": "https://github.com/Godoi/spa-js#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "toastr": "^2.1.4"
+  },
   "devDependencies": {
     "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",

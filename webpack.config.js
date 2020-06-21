@@ -7,10 +7,10 @@ module.exports = {
     open: true,
     contentBase:"dist",
   },
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output:{
     filename: "main.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   plugins:[
     new HtmlWebpackPlugin({
@@ -22,9 +22,21 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.html$/,
+        use:["html-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
         use: [
-          'style-loader',
-          'css-loader',
+          {
+            loader: 'file-loader',
+            options:{
+              name: "[name].[ext]"
+            }
+          },
         ],
       },
     ],
